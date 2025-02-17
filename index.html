@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <style>
+        df-messenger {
+            --df-messenger-bot-message: grey;
+            --df-messenger-button-titlebar-color: #21a0a0;
+            --df-messenger-chat-background-color: #fafafa;
+            --df-messenger-font-color: white;
+            --df-messenger-send-icon: #878fac;
+            --df-messenger-user-message: #0B8457;
+            --df-messenger-chat-window-height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <df-messenger
+        intent="WELCOME"
+        chat-icon="assets/img/logo.gif"
+        chat-title="Hai Ronaldia"
+        agent-id="80fc98b3-0d88-4e2b-84c6-cef6febcb48e"
+        language-code="id">
+    </df-messenger>
+</body>
+</html>
